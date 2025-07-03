@@ -1,0 +1,28 @@
+<!-- polling_form.html -->
+
+<!DOCTYPE html>
+<html>
+<head><title>Human Review: AI Hallucination</title></head>
+<body>
+<h2>🧠 Human Review: AI Hallucination Risk</h2>
+<p><b>Prompt:</b> <span id="prompt">[PASTE PROMPT HERE]</span></p>
+<p><b>AI Response:</b> <span id="response">[PASTE RESPONSE HERE]</span></p>
+<form>
+  <label>Is the response factually accurate?</label><br>
+  <input type="radio" name="accuracy" value="yes"> Yes<br>
+  <input type="radio" name="accuracy" value="partial"> Partially<br>
+  <input type="radio" name="accuracy" value="no"> No<br><br>
+
+  <label>Time you took to verify (minutes):</label><br>
+  <input type="number" name="time" min="0" step="0.1"><br><br>
+
+  <label>Confidence in your judgment (0–1):</label><br>
+  <input type="range" name="confidence" min="0" max="1" step="0.01"><br><br>
+
+  <label>Notes or corrections:</label><br>
+  <textarea rows="4" cols="50"></textarea><br><br>
+
+  <button type="submit">Submit Review</button>
+</form>
+</body>
+</html>
